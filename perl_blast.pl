@@ -13,7 +13,7 @@ $threshold = int(<STDIN>);
 
 
 print("query filename \n");
-$handle = "query.txt";
+$handle = <STDIN>;
 open(MYFILE, $handle);
 $query = <MYFILE>; 
 
@@ -32,7 +32,7 @@ while (length($q) >= $k) {
 }
 
 print("sequence filename \n");
-$handle = "sequences.txt";
+$handle = <STDIN>;
 open(MYFILE, $handle);
 while (<MYFILE>) {
 	chomp;
